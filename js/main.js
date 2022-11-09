@@ -56,7 +56,7 @@ class Drop {
         this.x = x
         this.y = y
         this.velocity = velocity
-        this.gravity = 2.5
+        this.gravity = 1.5
     }
 
     draw() {
@@ -89,7 +89,7 @@ function init() {
         const y = randomBetween(0, innerHeight)
         const velocity = {
             x: randomBetween(-1, 1),
-            y: randomBetween(23, 28)
+            y: randomBetween(13, 18)
         }
         rains.push(new Rain(x, y, velocity))
     }
